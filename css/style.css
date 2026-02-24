@@ -61,37 +61,42 @@ figcaption {
         
     
     }
-    figure{
-    overflow:hidden;
-    border-radius: 50%;
+    .grid figure {
+        overflow:hidden ;
+        border-radius: 50%;
     }
-    figcaption {
-
-    }
+    
     .grid figure:nth-child(9) {
         grid-column: 1/ 3;
 
     }
+}
+
+    
 
 /* Media queries for large screen */
-    
-}
 @media screen and (min-width: 992px) {
     .grid figure:nth-child(3n) {
     background-color: red;
     grid-column: 1/4;
     }
-    figure{
-        border-radius: 3%;
+     .grid figure {
+        overflow:hidden ;
+        border-radius:2px;
     }
-
 }
+
+
+
+
+
+/* media query for reduce motion  */
  @media all and(prefers-reduced-motion: reduce) {
     body{
         scroll-behavior:auto ;
 
     }
-    
+/* media query for color scheme  */
  }
  @media all and (prefers-color-scheme: dark) {
     figure {
