@@ -77,7 +77,6 @@ figcaption {
 /* Media queries for large screen */
 @media screen and (min-width: 992px) {
     .grid figure:nth-child(3n) {
-    background-color: red;
     grid-column: 1/4;
     }
      .grid figure {
